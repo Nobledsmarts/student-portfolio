@@ -169,6 +169,20 @@ main { flex: 1; display: grid; gap: 12px; align-content: start; padding: 12px 0 
 .avatar .chip { position: absolute; left: 84px; top: 22px; }
 
 .hero h1 { max-width: 18ch; margin-inline: auto; }
+
+/* Home hero: photo, headline, text and buttons rise in one after another */
+.hero > * { animation: rise 0.6s var(--ease) backwards; }
+.hero > :nth-child(2) { animation-delay: 0.08s; }
+.hero > :nth-child(3) { animation-delay: 0.16s; }
+.hero > :nth-child(4) { animation-delay: 0.24s; }
+.hero .chip { animation: chip-in 0.5s var(--ease) 0.45s backwards; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+}
+@keyframes chip-in {
+  from { opacity: 0; transform: rotate(-6deg) scale(0.8); }
+}
 .lead { font-size: 18px; line-height: 1.55; color: var(--text-2); max-width: 46ch; margin: 24px auto 0; }
 
 /* ---------- Page title panel ---------- */
