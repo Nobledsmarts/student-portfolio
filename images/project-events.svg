@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect width="640" height="400" fill="#e0dfdb"/>
+  <rect x="40" y="36" width="560" height="364" rx="12" fill="#ffffff" stroke="#e4e3df"/>
+  <rect x="40" y="36" width="560" height="34" rx="12" fill="#ecebe8"/>
+  <circle cx="62" cy="53" r="5" fill="#1fa94a"/><circle cx="80" cy="53" r="5" fill="#c9c8c4"/><circle cx="98" cy="53" r="5" fill="#c9c8c4"/>
+  <text x="70" y="112" font-size="22" font-weight="bold" fill="#151515">Campus Events</text>
+  <g font-size="12">
+    <rect x="70" y="128" width="46" height="24" rx="12" fill="#151515"/><text x="93" y="144" text-anchor="middle" fill="#ffffff">All</text>
+    <rect x="124" y="128" width="64" height="24" rx="12" fill="none" stroke="#e4e3df"/><text x="156" y="144" text-anchor="middle" fill="#151515">Tech</text>
+    <rect x="196" y="128" width="64" height="24" rx="12" fill="none" stroke="#e4e3df"/><text x="228" y="144" text-anchor="middle" fill="#151515">Sports</text>
+  </g>
+  <g font-size="13" fill="#151515">
+    <rect x="70" y="170" width="156" height="190" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="70" y="170" width="156" height="80" rx="12" fill="#cfcec9"/>
+    <text x="84" y="276" font-weight="bold">Hackathon</text>
+    <text x="84" y="298" fill="#7c7c78">12 Dec · Lab 2</text>
+    <rect x="242" y="170" width="156" height="190" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="242" y="170" width="156" height="80" rx="12" fill="#151515"/>
+    <text x="256" y="276" font-weight="bold">Career Fair</text>
+    <text x="256" y="298" fill="#7c7c78">18 Dec · Main hall</text>
+    <rect x="414" y="170" width="156" height="190" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="414" y="170" width="156" height="80" rx="12" fill="#cfcec9"/>
+    <text x="428" y="276" font-weight="bold">Football Final</text>
+    <text x="428" y="298" fill="#7c7c78">20 Dec · Pitch A</text>
+  </g>
+</svg>

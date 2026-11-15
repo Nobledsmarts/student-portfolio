@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Richard | Student Portfolio</title>
+  <meta name="description" content="Personal academic portfolio and planner of Franklin Chinedu Richard, a full-stack software engineer and Computer Science student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Franklin Richard</a>
+        <span class="avail">Open to internships</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel hero">
+      <div class="avatar">
+        <img src="images/profile.jpg" alt="Photograph of Franklin Chinedu Richard" width="112" height="112">
+        <span class="chip">Franklin</span>
+      </div>
+      <h1>Full-stack software engineer <span class="dim">studying Computer Science.</span></h1>
+      <p class="lead">
+        Welcome to my portfolio. This is where I keep my profile, the
+        projects I am building, and the planner that keeps my coursework
+        on track.
+      </p>
+      <div class="actions">
+        <a class="btn" href="projects.html">View projects <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="btn light" href="planner.html">Open the planner</a>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="bio-heading">
+      <div class="sec-head">
+        <h2 id="bio-heading">Brief biography</h2>
+      </div>
+      <div class="sec-body">
+        <p>
+          I am Franklin Chinedu Richard, a full-stack software engineer and a
+          Computer Science student at Miva Open University. I build web
+          products end to end, from the interface to the server behind it,
+          and I am studying to deepen the fundamentals under that work.
+        </p>
+        <p>
+          You will find me as nobledsmarts on most platforms. The full
+          profile is on the <a href="about.html">About me</a> page.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel explore" aria-labelledby="explore-heading">
+      <h2 id="explore-heading">A portfolio and a planner <span class="dim">in one place, built from scratch.</span></h2>
+      <div class="rule"><span class="chip">Explore</span></div>
+      <ul class="cols">
+        <li>
+          <a href="about.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+            <h3>About me</h3>
+            <p>Education, career plan, technical skills and interests.</p>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+            <h3>Projects</h3>
+            <p>Three sample projects with screenshots and links.</p>
+          </a>
+        </li>
+        <li>
+          <a href="planner.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>
+            <h3>Academic planner</h3>
+            <p>Add coursework tasks, tick them off and delete them.</p>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+            <h3>Contact</h3>
+            <p>Send me a message through a validated form.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="duo">
+      <section class="panel" aria-labelledby="audio-heading">
+        <h2 id="audio-heading">Audio welcome</h2>
+        <p>A short introduction to listen to before you look around.</p>
+        <audio controls preload="none">
+          <source src="assets/intro.wav" type="audio/wav">
+          Your browser does not support audio playback.
+          <a href="assets/intro.wav">Download the audio</a> instead.
+        </audio>
+      </section>
+      <section class="panel cta" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Have a question <span class="dim">or an idea?</span></h2>
+        <div class="actions">
+          <a class="btn" href="contact.html">Contact me</a>
+          <a class="btn light" href="https://github.com/nobledsmarts" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Franklin Chinedu Richard · COS 106 term project</span>
+      <span><a href="contact.html">Contact</a> · <a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

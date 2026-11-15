@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Franklin Richard</title>
+  <meta name="description" content="Send Franklin a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Franklin Richard</a>
+        <span class="avail">Open to internships</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="contact">
+      <div>
+        <h1>Contact</h1>
+        <p class="lead">
+          Questions, feedback or a project idea. Fill in the form and I will
+          reply as soon as I can.
+        </p>
+        <dl class="defs">
+          <div><dt>Email</dt><dd><a href="mailto:nobledsmarts@gmail.com">nobledsmarts@gmail.com</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">github.com/nobledsmarts</a></dd></div>
+          <div><dt>Location</dt><dd>Awka, Anambra State, Nigeria</dd></div>
+        </dl>
+      </div>
+
+      <form id="contact-form" class="form-sheet" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+          <small class="error" id="name-error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" aria-describedby="email-error">
+          <small class="error" id="email-error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="08012345678" aria-describedby="phone-error">
+          <small class="error" id="phone-error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+          <small class="error" id="message-error" role="alert"></small>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-success" class="notice" role="status" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Franklin Chinedu Richard · COS 106 term project</span>
+      <span><a href="index.html">Home</a> · <a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

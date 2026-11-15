@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Franklin Richard</title>
+  <meta name="description" content="Sample web projects built by Franklin Chinedu Richard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Franklin Richard</a>
+        <span class="avail">Open to internships</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="title-block">
+      <h1>Projects</h1>
+      <p class="lead">
+        Three sample projects from my first year. Each one taught me
+        something different about building for the web.
+      </p>
+    </div>
+
+    <section class="projects" aria-label="Sample projects">
+
+        <article class="project">
+          <img src="images/project-planner.svg" alt="Screenshot of the Academic Planner showing a task list" width="640" height="400">
+          <div>
+            <span class="mono index">01</span>
+            <h2>Academic Planner</h2>
+            <p>
+              A task sheet for coursework. Add assignments with a course and
+              due date, tick them off, filter by status, and delete old ones.
+              Tasks are saved in the browser.
+            </p>
+            <ul class="inline-list" aria-label="Built with">
+              <li>JavaScript</li>
+              <li>localStorage</li>
+              <li>DOM</li>
+            </ul>
+            <p class="links">
+              <a href="planner.html">Live demo</a>
+              <a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-gpa.svg" alt="Screenshot of the GPA Calculator showing a course table and result" width="640" height="400">
+          <div>
+            <span class="mono index">02</span>
+            <h2>GPA Calculator</h2>
+            <p>
+              Enter your courses, credit units and grades to see your grade
+              point average on a 5-point scale. The result updates as you
+              type.
+            </p>
+            <ul class="inline-list" aria-label="Built with">
+              <li>HTML tables</li>
+              <li>Forms</li>
+              <li>JavaScript</li>
+            </ul>
+            <p class="links">
+              <a href="#" data-simulated>Live demo</a>
+              <a href="#" data-simulated>Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-events.svg" alt="Screenshot of the Campus Events page showing event cards" width="640" height="400">
+          <div>
+            <span class="mono index">03</span>
+            <h2>Campus Events Page</h2>
+            <p>
+              A responsive page listing upcoming campus events, built
+              mobile-first with CSS Grid and a simple category filter.
+            </p>
+            <ul class="inline-list" aria-label="Built with">
+              <li>CSS Grid</li>
+              <li>Flexbox</li>
+              <li>Responsive</li>
+            </ul>
+            <p class="links">
+              <a href="#" data-simulated>Live demo</a>
+              <a href="#" data-simulated>Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <p id="link-note" class="notice" role="status" hidden></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Franklin Chinedu Richard · COS 106 term project</span>
+      <span><a href="contact.html">Contact</a> · <a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Simulated project links: explain instead of jumping to the top of the page.
+    const note = document.querySelector("#link-note");
+    document.querySelectorAll("[data-simulated]").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const project = link.closest(".project").querySelector("h2").textContent;
+        note.textContent = "The " + link.textContent.toLowerCase() + " link for " + project + " is a sample link for this portfolio.";
+        note.hidden = false;
+      });
+    });
+  </script>
+</body>
+</html>

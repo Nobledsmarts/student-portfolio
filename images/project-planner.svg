@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect width="640" height="400" fill="#e0dfdb"/>
+  <rect x="40" y="36" width="560" height="364" rx="12" fill="#ffffff" stroke="#e4e3df"/>
+  <rect x="40" y="36" width="560" height="34" rx="12" fill="#ecebe8"/>
+  <circle cx="62" cy="53" r="5" fill="#1fa94a"/><circle cx="80" cy="53" r="5" fill="#c9c8c4"/><circle cx="98" cy="53" r="5" fill="#c9c8c4"/>
+  <text x="70" y="112" font-size="22" font-weight="bold" fill="#151515">Academic planner</text>
+  <g font-size="14" fill="#151515">
+    <rect x="70" y="134" width="500" height="46" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="84" y="148" width="18" height="18" rx="4" fill="#151515"/>
+    <path d="M88 157l4 4 7-8" stroke="#ffffff" stroke-width="2.2" fill="none"/>
+    <text x="116" y="162" fill="#7c7c78" text-decoration="line-through">Read chapter 4 · MTH 102</text>
+    <rect x="70" y="190" width="500" height="46" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="84" y="204" width="18" height="18" rx="4" fill="none" stroke="#151515" stroke-width="2"/>
+    <text x="116" y="218">Submit term project · COS 106</text>
+    <rect x="496" y="202" width="60" height="22" rx="12" fill="none" stroke="#151515"/>
+    <text x="507" y="218" font-size="12" fill="#151515">Delete</text>
+    <rect x="70" y="246" width="500" height="46" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="84" y="260" width="18" height="18" rx="4" fill="none" stroke="#151515" stroke-width="2"/>
+    <text x="116" y="274">Revise for quiz · GST 112</text>
+    <rect x="70" y="302" width="500" height="46" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+    <rect x="84" y="316" width="18" height="18" rx="4" fill="none" stroke="#151515" stroke-width="2"/>
+    <text x="116" y="330">Group meeting notes · PHY 108</text>
+  </g>
+</svg>

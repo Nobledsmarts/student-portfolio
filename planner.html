@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Planner | Franklin Richard</title>
+  <meta name="description" content="Interactive academic planner: add tasks, mark them completed and delete them.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Franklin Richard</a>
+        <span class="avail">Open to internships</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="title-block">
+      <h1>Academic planner</h1>
+      <p class="lead">
+        A task sheet for assignments, readings and revision. Tick a task when
+        it is done and delete it when you no longer need it. The sheet is
+        saved on this device.
+      </p>
+    </div>
+
+    <section class="planner" aria-label="Planner">
+        <form id="task-form" class="task-form" novalidate>
+          <div class="field">
+            <label for="task-title">Task</label>
+            <input type="text" id="task-title" name="title" maxlength="120" placeholder="Submit term project" aria-describedby="task-title-error">
+            <small class="error" id="task-title-error" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="task-course">Course</label>
+            <input type="text" id="task-course" name="course" maxlength="12" placeholder="COS 106">
+          </div>
+          <div class="field">
+            <label for="task-due">Due date</label>
+            <input type="date" id="task-due" name="due">
+          </div>
+          <button class="btn" type="submit">Add task</button>
+        </form>
+
+        <div class="panel list-panel">
+        <div class="sheet-top">
+          <p class="tally" aria-live="polite">
+            <span id="count-total">0</span> total ·
+            <span id="count-active">0</span> pending ·
+            <span id="count-done">0</span> completed
+          </p>
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="active" aria-pressed="false">Pending</button>
+            <button type="button" data-filter="done" aria-pressed="false">Completed</button>
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="sheet-head" aria-hidden="true">
+            <span></span><span>Task</span><span>Course</span><span>Due</span><span></span>
+          </div>
+          <ul id="task-list" class="tasks"></ul>
+          <p id="empty" class="empty">Nothing on the sheet yet. Add your first task above.</p>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Franklin Chinedu Richard · COS 106 term project</span>
+      <span><a href="contact.html">Contact</a> · <a href="https://github.com/nobledsmarts" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

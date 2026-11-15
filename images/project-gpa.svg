@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect width="640" height="400" fill="#e0dfdb"/>
+  <rect x="40" y="36" width="560" height="364" rx="12" fill="#ffffff" stroke="#e4e3df"/>
+  <rect x="40" y="36" width="560" height="34" rx="12" fill="#ecebe8"/>
+  <circle cx="62" cy="53" r="5" fill="#1fa94a"/><circle cx="80" cy="53" r="5" fill="#c9c8c4"/><circle cx="98" cy="53" r="5" fill="#c9c8c4"/>
+  <text x="70" y="112" font-size="22" font-weight="bold" fill="#151515">GPA Calculator</text>
+  <g font-size="14" fill="#151515">
+    <rect x="70" y="132" width="330" height="32" fill="#151515"/>
+    <text x="84" y="153" fill="#ffffff">Course</text><text x="230" y="153" fill="#ffffff">Units</text><text x="320" y="153" fill="#ffffff">Grade</text>
+    <rect x="70" y="164" width="330" height="128" fill="none" stroke="#e4e3df"/>
+    <line x1="70" y1="196" x2="400" y2="196" stroke="#e4e3df"/>
+    <line x1="70" y1="228" x2="400" y2="228" stroke="#e4e3df"/>
+    <line x1="70" y1="260" x2="400" y2="260" stroke="#e4e3df"/>
+    <text x="84" y="185">COS 106</text><text x="240" y="185">3</text><text x="330" y="185">A</text>
+    <text x="84" y="217">MTH 102</text><text x="240" y="217">3</text><text x="330" y="217">B</text>
+    <text x="84" y="249">GST 112</text><text x="240" y="249">2</text><text x="330" y="249">A</text>
+    <text x="84" y="281">PHY 108</text><text x="240" y="281">2</text><text x="330" y="281">B</text>
+  </g>
+  <rect x="430" y="132" width="140" height="160" rx="12" fill="#f4f4f2" stroke="#e4e3df"/>
+  <text x="500" y="170" font-size="13" text-anchor="middle" fill="#7c7c78">Your GPA</text>
+  <text x="500" y="232" font-size="52" font-weight="bold" text-anchor="middle" fill="#151515">4.50</text>
+  <text x="500" y="266" font-size="13" text-anchor="middle" fill="#7c7c78">out of 5.00</text>
+  <rect x="70" y="316" width="130" height="36" rx="12" fill="#151515"/>
+  <text x="135" y="339" font-size="14" text-anchor="middle" fill="#ffffff">Add course</text>
+</svg>
