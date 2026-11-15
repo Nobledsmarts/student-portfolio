@@ -102,6 +102,7 @@ main { flex: 1; display: grid; gap: 12px; align-content: start; padding: 12px 0 
   font-size: 15px;
   color: var(--text-2);
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.15s var(--ease), background-color 0.15s var(--ease);
 }
 .nav a:hover { color: var(--text); background: var(--panel); }
@@ -398,6 +399,8 @@ input:focus, textarea:focus { outline: none; border-color: var(--text); }
 
 /* ---------- Responsive design ---------- */
 @media (max-width: 960px) {
+  .avail { display: none; }
+  .nav a { padding: 8px 12px; }
   .cols { grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
   .contact, .duo { grid-template-columns: 1fr; }
   .task-form { grid-template-columns: 1fr 1fr; padding-bottom: 40px; }
@@ -416,7 +419,6 @@ input:focus, textarea:focus { outline: none; border-color: var(--text); }
   .title-block { padding: 56px 24px; }
 
   .bar { padding: 0 10px 0 20px; min-height: 56px; }
-  .avail { display: none; }
   .nav-toggle { display: block; }
   .nav {
     display: none;
