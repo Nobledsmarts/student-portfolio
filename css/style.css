@@ -280,6 +280,17 @@ textarea {
   font: inherit;
   transition: border-color 0.15s var(--ease);
 }
+/* Phone browsers give date fields a fixed built-in width; let them shrink to the form */
+input[type="date"] {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 50px;
+  text-align: left;
+}
+input[type="date"]::-webkit-date-and-time-value { text-align: left; }
 textarea { height: auto; min-height: 148px; padding: 14px 18px; resize: vertical; }
 input::placeholder, textarea::placeholder { color: #a9a9a5; }
 input:hover, textarea:hover { border-color: rgba(0, 0, 0, 0.15); }
@@ -306,7 +317,7 @@ input:focus, textarea:focus { outline: none; border-color: var(--text); }
   border-radius: var(--radius-panel);
   padding: 40px 56px 24px;
 }
-.task-form .field { margin: 0; }
+.task-form .field { margin: 0; min-width: 0; }
 .task-form .btn { margin-top: 30px; }
 
 .list-panel { padding-top: 40px; padding-bottom: 40px; }
